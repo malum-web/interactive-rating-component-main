@@ -16,30 +16,31 @@
 <body>
 
   <!-- Rating state start -->
-  <div class="container">
+  <div class="container" id="container">
     <img src="/images/icon-star.svg" alt="">
     <h1>How did we do?</h1>
     <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     <div class="button-container">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+      <button id="ratingBtn1">1</button>
+      <button id="ratingBtn2">2</button>
+      <button id="ratingBtn3">3</button>
+      <button id="ratingBtn4">4</button>
+      <button id="ratingBtn5">5</button>
     </div>
     <button id="submit">SUBMIT</button>
   </div>
 
   <!-- Thank you -->
-  <div class="rating-container">
+  <div class="rating-container" id="rating-container">
     <div class="btn">
-      <button>X</button>
+      <button id="close">X</button>
     </div>
     <img src="/images/illustration-thank-you.svg" alt="">
-    <span id="choise">You selected 4 out of 5</span>
+    <span id="yourChoise">You selected 4 out of 5</span>
     <h1>Thank You!</h1>
     <p>We aspanpreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
