@@ -11,6 +11,8 @@ const text = document.getElementById('yourChoise');
 
 const closeBtn = document.getElementById('close');
 
+const array = [ratingBtn1, ratingBtn2, ratingBtn3, ratingBtn4, ratingBtn5];
+
 let choice = '';
 
 function valueChoice() {
@@ -29,10 +31,8 @@ function restart () {
     choice = '';
 }
 
-ratingBtn1.addEventListener('click', valueChoice);
-ratingBtn2.addEventListener('click', valueChoice);
-ratingBtn3.addEventListener('click', valueChoice);
-ratingBtn4.addEventListener('click', valueChoice);
-ratingBtn5.addEventListener('click', valueChoice);
+array.forEach(btn => {
+    btn.addEventListener('click', valueChoice);
+});
 ratingSubmit.addEventListener('click', sendSubmit);
 closeBtn.addEventListener('click', restart);
