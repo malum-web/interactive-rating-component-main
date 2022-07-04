@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+--white: hsl(0, 0%, 100%);
+--lightGrey: hsl(217, 12%, 63%);
+--mediumGrey: hsl(216, 12%, 54%);
+--mediumGreyOpa: hsla(215, 7%, 35%, 0.377);
+--darkBlue: hsl(213, 19%, 18%);
+--veryDarkBlue: hsl(216, 12%, 8%);
+--orange: hsl(25, 97%, 53%);
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--veryDarkBlue);
+}
+
+.container {
+    height: auto;
+    width: 350px;
+    padding: 20px;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 15px;
+    background: var(--darkBlue);
+    
+}
+
+.container img {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: var(--mediumGreyOpa);
+    border-radius: 20px;
+}
+
+.container h1 {
+    color: var(--white);
+}
+
+.container p {
+    font-size: 15px;
+    color: var(--mediumGrey);
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--mediumGreyOpa);
+    font-family: 'Overpass', sans-serif;
+    color: var(--lightGrey);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 350px;
+    background-color: var(--orange);
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 2px;
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
