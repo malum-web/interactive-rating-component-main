@@ -15,20 +15,26 @@ const array = [ratingBtn1, ratingBtn2, ratingBtn3, ratingBtn4, ratingBtn5];
 
 let choice = '';
 
+let useChoice = false;
+
 function valueChoice() {
     choice = this.textContent;
+    useChoice = true;
 }
 
 function sendSubmit() {
-    rating.hidden = true;
+    if (useChoice) {
+     rating.hidden = true;
     ratingThanks.style.display = 'flex';
-    text.textContent = `You selected ${choice} out of 5`;
+    text.textContent = `You selected ${choice} out of 5`;   
+    }   
 }
 
 function restart () {
     rating.hidden = false;
     ratingThanks.style.display = 'none';
     choice = '';
+    useChoice = false;
 }
 
 array.forEach(btn => {
