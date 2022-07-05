@@ -17,11 +17,13 @@ let choice = '';
 
 let useChoice = false;
 
+// User choice number
 function valueChoice() {
     choice = this.textContent;
     useChoice = true;
 }
 
+// Send choice 
 function sendSubmit() {
     if (useChoice) {
      rating.hidden = true;
@@ -30,6 +32,7 @@ function sendSubmit() {
     }   
 }
 
+// Restart function
 function restart () {
     rating.hidden = false;
     ratingThanks.style.display = 'none';
